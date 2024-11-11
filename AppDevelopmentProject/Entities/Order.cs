@@ -8,9 +8,8 @@ namespace AppDevelopmentProject.Entities
     public class Order : IEntity
     {
         [Key]
-        public Guid Id { get; }
+        public Guid Id { get; set; }
 
-        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string? Number { get; set; }
         public string Name { get; set; }
